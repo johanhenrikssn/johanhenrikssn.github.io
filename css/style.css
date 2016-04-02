@@ -5,6 +5,13 @@
   padding-top: 120px;
 }
 
+#contact {
+  background-color: #e7b0a1;
+  height:200px;
+  text-align: center;
+  padding-top: 50px;
+}
+
 p {
   color: #fff;
 }
@@ -47,4 +54,14 @@ h2 {
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+}
+
+a {
+  padding: 0px 10px;
+  word-wrap: normal;
+  display: inline-block;
+}
+
+i {
+  color: #333333
 }
