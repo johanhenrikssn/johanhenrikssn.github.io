@@ -59,39 +59,48 @@ h2 {
 }
 
 .project {
-	padding: 1%;
 	height: 350px;
+  width: 100%
 	margin-bottom: 15px;
-  border-style: solid;
-  border-width: 0px;
   text-align: center;
-  background: no-repeat center;
-  background-size: 100%;
-  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #333;
   margin-right: 15px;
   margin-top: 15px;
 }
 
+
 .project h2 {
-  z-index: 1;
-  position: absolute;
   color: #fff;
 }
 
 .project p {
   color: #fff;
-  z-index: 1;
-  position: absolute;
+
 }
 
 .project a {
   border-bottom: solid 2px;
   text-decoration: none;
-  z-index: 1;
-  position: absolute;
 }
 
-#color-overlay {
+.info {
+  background-color:rgba(0,0,0,0.7);
+  width:100%;
+   height:100%;
+}
+
+.info :hover {
+  background-color:rgba(0,0,0,0.3);
+}
+
+.project :hover {
+  background-color:rgba(0,0,0,0.3);
+}
+
+/*#color-overlay {
    position: absolute;
    top: 0;
    left: 0;
@@ -103,7 +112,7 @@ h2 {
 
 #color-overlay:hover {
 	 opacity: .5;
-}
+}*/
 
 
 .nopadding {
