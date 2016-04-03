@@ -26,15 +26,21 @@
   background-color: #e7b0a1;
   height:200px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 #projects {
-  background-color: #1E202A;
+  background-color: #526176;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-p {
+.project-head {
+  text-align: center;
   color: #fff;
+  font-family: 'corporate-s', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -66,15 +72,39 @@ h2 {
   margin-top: 15px;
 }
 
-/*#color-overlay {
+.project h2 {
+  z-index: 1;
+  position: absolute;
+  color: #fff;
+}
+
+.project p {
+  color: #fff;
+  z-index: 1;
+  position: absolute;
+}
+
+.project a {
+  border-bottom: solid 2px;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+}
+
+#color-overlay {
    position: absolute;
    top: 0;
    left: 0;
    width: 100%;
    height: 100%;
-   background-color: #000;
-	 opacity: .3;
-}*/
+   background-color: #333333;
+	 opacity: .9;
+}
+
+#color-overlay:hover {
+	 opacity: .5;
+}
+
 
 .nopadding {
    padding: 0 !important;
