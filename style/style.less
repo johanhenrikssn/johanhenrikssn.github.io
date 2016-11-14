@@ -1,17 +1,98 @@
 @import "variables.less";
 
+@keyframes leftRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes rightLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes downUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+  }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+#hero-container {
+  animation: downUp 0.5s;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 #hero {
-  background-color: #e7b0a1;
-  height:50vh;
-  text-align: center;
+  background-color: #1C1D25;
+  height:80vh;
+  //text-align: center;
   display:flex;
-  justify-content:center;
-  align-items:center;
+  /*justify-content:center;
+  align-items:center;*/
+
+  img {
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .circle {
+    border-radius: 50%;
+    background: #333333;
+    height: 200px;
+    width: 200px;
+    animation: rightLeft 0.5s;
+    margin: 0 auto;
+  }
+
+  .circle-container {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+
+  .bild {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    animation-duration: 0.5s;
+    animation-name: leftRight;
+    animation-delay: 0.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+
+  .titel {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
 
   h1 {
     font-family: 'corporate-s', sans-serif;
     color: #fff;
     font-size: 3em;
+    /*border-bottom: solid 5px #e7b0a1;
+    display: inline-block;*/
   }
 
   h3 {
@@ -23,7 +104,7 @@
 
 #intro {
   background-color: #333333;
-  height:50vh;
+  height:45vh;
   padding-left: 10%;
   padding-right: 10%;
   text-align: center;
@@ -36,6 +117,7 @@
     font-family: 'corporate-s', sans-serif;
     font-size: 1.5em;
     line-height: 1.3;
+    margin: 0;
   }
 }
 
@@ -128,6 +210,10 @@
     display: inline-block;
   }
 
+  i:hover {
+    opacity: 0.8;
+  }
+
   i {
     color: #333333
   }
@@ -142,13 +228,16 @@
       h3 {
         font-size: 1.5em;
       }
+      .titel {
+        margin-top: 80px;
+      }
     }
 
     #intro {
       padding-left: 20%;
       padding-right: 20%;
       h2 {
-        font-size: 2.5em;
+        font-size: 2.2em;
       }
     }
 }
